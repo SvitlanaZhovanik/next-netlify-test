@@ -1,11 +1,9 @@
 type InstaPostType = {
-  slug: string
-  title: string
-  image: {
-    url: string,
-    alt:string
-  }
-  link: string
+  id: string
+  caption?: string
+  media_url: string
+  permalink: string
+  media_type:string
 }
 
 export default InstaPostType

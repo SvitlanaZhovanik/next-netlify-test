@@ -3,9 +3,9 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.pixabay.com",
+        hostname: "*.cdninstagram.com",
         port: "",
-        pathname: "/photo/2022/12/12/**",
+        pathname: "**",
       },
     ],
   },

@@ -8,17 +8,18 @@ type Props = {
 
 const Instagram = ({ posts, title }: Props) => {
   return (
-    <section className='bg-[#CAC8C8]'>
+    <section className='bg-[#CAC8C8] p-3 md:p-10'>
       <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
        {title}
       </h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+      <ul className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-y-10 md:gap-x-6 xl:grid-cols-3">
         {posts.map((post) => (
           <PostCard
-            key={post.slug}
-            title={post.title}
-            link={post.link}
-            image={post.image}
+            key={post.id}
+            caption={post.caption }
+            media_url={post.media_url }
+            permalink={post.permalink}
+            media={post.media_type}
           />
         ))}
       </ul>
