@@ -7,7 +7,6 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@google-cloud/pubsub": "^3.2.1",
     "@google-cloud/secret-manager": "^4.1.4",
     "axios": "^1.2.1",
     "classnames": "^2.3.1",
