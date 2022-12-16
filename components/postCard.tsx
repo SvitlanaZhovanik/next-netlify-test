@@ -8,7 +8,7 @@ type Props = {
 }
 
 const PostCard = ({ caption, media_url, permalink, media }: Props) => {
-    return (<li className="max-w-[296px] md:max-w-[360px] xl:max-w-[356px] bg-[#FDFDFD]/30 border border-white rounded-[30px] backdrop-blur-sm p-5">
+    return (<li className="max-w-[296px] md:max-w-[360px] xl:max-w-[356px] bg-[#FDFDFD]/30 border border-white rounded-[30px] backdrop-blur-sm p-5 shadow-xl">
         <div className="flex gap-2 mb-5 items-center">
             {media !== "VIDEO" ? <Image src={media_url} alt="фото з instagram" width={132} height={132} className="rounded-[20px] object-cover h-[132px]" /> : <video controls src={media_url} width={132} height={132} className="rounded-[20px] object-cover h-[132px]">Sorry, your browser doesn't support embedded videos,
                 but don't worry, you can <a href={media_url}>download it</a>
